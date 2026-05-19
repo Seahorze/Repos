@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Both paragraphs get black color and bold text */
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
+/* Big paragraph is 22px */
+.para {
+  font-size: 22px;
+}
+
+/* Small paragraph is 14px - this comes AFTER .para so it wins */
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* Both buttons start with white background and black text */
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+/* ID selector beats class selector, so confirm button gets green */
+#confirm-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+
+/* All text divs are thin */
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+/* Child div is bold and smaller - comes after div.text so it wins */
+div .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
